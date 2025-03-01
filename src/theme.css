@@ -127,6 +127,14 @@ html {
   background-color: var(--second-background) !important;
 }
 
+.notifications {
+  color: var(--blue) !important;
+}
+
+.notification_important {
+  color: var(--red-color) !important;
+}
+
 .button-submit,
 .button-submit:focus,
 .button-alt,
