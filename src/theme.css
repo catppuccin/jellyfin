@@ -182,6 +182,14 @@ html {
   color: var(--main-color);
 }
 
+.mdl-slider::-moz-range-thumb {
+  background-color: var(--main-color);
+}
+
+.buttonActive {
+  color: var(--main-color) !important;
+}
+
 .MuiButtonBase-root,
 .MuiSvgIcon-root,
 .listItemButton,
