@@ -29,6 +29,7 @@
 
 .backgroundContainer,
 .formDialogHeader,
+.detailRibbon,
 .dialog,
 .dashboardGeneralForm,
 html {
@@ -36,11 +37,15 @@ html {
   background-color: var(--main-background);
 }
 
+.detailPageSecondaryContainer {
+  background-color: var(--second-background) !important;
+}
+
 .sliderBubble,
 .skinHeader,
 .nowPlayingBar {
   color: var(--main-text);
-  background-color: var(--second-background);
+  background-color: var(--second-background) !important;
 }
 
 .nowPlayingBarSecondaryText {
@@ -245,9 +250,12 @@ legend {
 }
 
 .fieldDescription,
-.secondary,
+.secondary {
+  color: var(--dimmer-text) !important;
+}
+
 .listItemBodyText {
-  color: var(--dimmer-text);
+  color: var(--main-text);
 }
 
 .listItem-border {
