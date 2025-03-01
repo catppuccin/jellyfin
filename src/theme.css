@@ -99,9 +99,11 @@ html {
   color: var(--main-background);
 }
 
-.fab, .raised {
-  background-color: var(--second-background);
+.toast,
+.fab,
+.raised {
   color: var(--main-text);
+  background-color: var(--second-background);
 }
 
 .emby-button-foreground {

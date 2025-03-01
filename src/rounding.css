@@ -17,6 +17,7 @@
 .innerCardFooter,
 .blurhash-canvas,
 .actionSheetMenuItem:hover,
+.toast,
 .dialog {
   border-radius: 8px !important;
 }
