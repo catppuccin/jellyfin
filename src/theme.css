@@ -27,6 +27,11 @@
   background-color: var(--hover-background);
 }
 
+.formDialogHeader:not(.formDialogHeader-clear),
+.formDialogFooter:not(.formDialogFooter-clear) {
+  background-color: var(--second-background);
+}
+
 .backgroundContainer,
 .formDialogHeader,
 .detailRibbon,
@@ -88,6 +93,10 @@ html {
   color: var(--main-text);
   background-color: var(--main-color);
   border-color: var(--main-color);
+}
+
+.checkboxOutline .checkboxIcon-checked {
+  color: var(--main-background);
 }
 
 .fab, .raised {
@@ -265,4 +274,24 @@ legend {
 .sessionAppName,
 .sessionNowPlayingInfo {
   color: var(--main-background);
+}
+
+.button-flat:hover {
+  color: var(--main-color);
+}
+
+.playstatebutton-icon-played {
+  color: var(--red);
+}
+
+/* Dashboard notification icons */
+
+.material-icons.notifications[style="background-color:#00a4dc"] {
+  color: var(--main-background);
+  background-color: var(--blue) !important;
+}
+
+.material-icons.notification_important[style="background-color:#cc0000"] {
+  color: var(--main-background);
+  background-color: var(--red) !important;
 }
