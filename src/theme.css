@@ -19,6 +19,7 @@
 }
 
 .mdl-slider::-webkit-slider-thumb,
+.mdl-slider::-moz-range-thumb,
 .mdl-slider-background-lower {
   background-color: var(--main-color);
 }
@@ -71,6 +72,7 @@ html {
   color: var(--main-text);
 }
 
+.playstatebutton-icon-played,
 .ratingbutton-icon-withrating {
   color: var(--red-color);
 }
@@ -93,10 +95,6 @@ html {
   color: var(--main-text);
   background-color: var(--main-color);
   border-color: var(--main-color);
-}
-
-.checkboxOutline .checkboxIcon-checked {
-  color: var(--main-background);
 }
 
 .toast,
@@ -178,6 +176,7 @@ html {
 .selectLabelFocused,
 .textareaLabelFocused,
 .button-flat:focus,
+.button-flat:hover,
 .itemAction:focus,
 .emby-tab-button-active>.emby-button-foreground,
 .emby-button-foreground:focus,
@@ -189,10 +188,6 @@ html {
 
 .mdl-slider::-moz-range-thumb {
   background-color: var(--main-color);
-}
-
-.buttonActive {
-  color: var(--main-color) !important;
 }
 
 .MuiButtonBase-root,
@@ -240,6 +235,7 @@ html {
   color: var(--dimmer-text);
 }
 
+.buttonActive,
 .layout-tv .paper-icon-button-light.show-focus:focus {
   color: var(--main-color) !important;
 }
@@ -286,15 +282,8 @@ legend {
   border-color: var(--hover-background) !important;
 }
 
+.checkboxOutline .checkboxIcon-checked,
 .sessionAppName,
 .sessionNowPlayingInfo {
   color: var(--main-background);
-}
-
-.button-flat:hover {
-  color: var(--main-color);
-}
-
-.playstatebutton-icon-played {
-  color: var(--red);
 }
