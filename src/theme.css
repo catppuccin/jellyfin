@@ -124,6 +124,11 @@ html {
   background-color: var(--hover-background);
 }
 
+.listItemIcon:not(.listItemIcon-transparent) {
+  color: var(--main-text);
+  background-color: var(--second-background) !important;
+}
+
 .button-submit,
 .button-submit:focus,
 .button-alt,
@@ -292,16 +297,4 @@ legend {
 
 .playstatebutton-icon-played {
   color: var(--red);
-}
-
-/* Dashboard notification icons */
-
-.material-icons.notifications[style="background-color:#00a4dc"] {
-  color: var(--main-background);
-  background-color: var(--blue) !important;
-}
-
-.material-icons.notification_important[style="background-color:#cc0000"] {
-  color: var(--main-background);
-  background-color: var(--red) !important;
 }
