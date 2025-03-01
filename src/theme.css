@@ -29,8 +29,9 @@
 }
 
 .formDialogHeader:not(.formDialogHeader-clear),
-.formDialogFooter:not(.formDialogFooter-clear) {
-  background-color: var(--second-background);
+.formDialogFooter:not(.formDialogFooter-clear),
+.cardBox:not(.visualCardBox) .cardPadder {
+  background-color: var(--hover-background);
 }
 
 .backgroundContainer,
@@ -48,7 +49,7 @@ html {
 }
 
 .sliderBubble,
-.skinHeader,
+.skinHeader:not(.osdHeader),
 .nowPlayingBar {
   color: var(--main-text);
   background-color: var(--second-background) !important;
@@ -118,7 +119,7 @@ html {
 .listItem:focus,
 .navMenuOption:hover,
 .navMenuOption:focus {
-  color: var(--main-color);
+  color: var(--main-color) !important;
   background-color: var(--hover-background);
 }
 
@@ -190,7 +191,8 @@ html {
 .emby-button-foreground:focus,
 .mdl-slider,
 .headerRight,
-.headerLeft {
+.headerLeft,
+.button-link {
   color: var(--main-color);
 }
 
@@ -294,4 +296,20 @@ legend {
 .sessionAppName,
 .sessionNowPlayingInfo {
   color: var(--main-background);
+}
+
+.iconOsd {
+  background-color: var(--second-background);
+}
+
+.iconOsd .iconOsdIcon {
+  color: var(--main-text);
+}
+
+.iconOsdProgressOuter {
+  background-color: var(--hover-background);
+}
+
+.iconOsdProgressInner {
+  background-color: var(--main-color);
 }
