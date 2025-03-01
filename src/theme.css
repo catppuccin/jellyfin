@@ -21,14 +21,15 @@
 .mdl-slider::-webkit-slider-thumb {background-color: var(--main-color);}
 .mdl-slider::-moz-range-thumb {background-color: var(--main-color);}
 
+.navMenuOption-selected,
+.listItemButton:focus,
+.iconOsdProgressInner,
 .mdl-slider-background-lower {
   background-color: var(--main-color);
 }
 
-.mdl-slider-background-flex {
-  background-color: var(--hover-background);
-}
-
+.iconOsdProgressOuter,
+.mdl-slider-background-flex,
 .formDialogHeader:not(.formDialogHeader-clear),
 .formDialogFooter:not(.formDialogFooter-clear),
 .cardBox:not(.visualCardBox) .cardPadder {
@@ -66,14 +67,6 @@ html {
   background: var(--main-background);
 }
 
-.navMenuOption-selected {
-  background-color: var(--main-color);
-}
-
-.itemName {
-  color: var(--main-text);
-}
-
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating {
   color: var(--red-color);
@@ -104,14 +97,6 @@ html {
 .raised {
   color: var(--main-text);
   background-color: var(--second-background);
-}
-
-.emby-button-foreground {
-  color: var(--main-text);
-}
-
-.paper-icon-button-light {
-  color: var(--main-text);
 }
 
 .paper-icon-button-light:hover:not(:disabled),
@@ -198,10 +183,6 @@ html {
   color: var(--main-color);
 }
 
-.mdl-slider::-moz-range-thumb {
-  background-color: var(--main-color);
-}
-
 .MuiButtonBase-root,
 .MuiSvgIcon-root,
 .listItemButton,
@@ -227,10 +208,6 @@ html {
 
 .MuiToolbar-root {
   background-color: var(--main-background);
-}
-
-.listItemButton:focus {
-  background-color: var(--main-color);
 }
 
 .indicator {
@@ -280,6 +257,10 @@ html {
 .navMenuOption,
 .inputLabel,
 .content-primary,
+.itemName,
+.paper-icon-button-light,
+.emby-button-foreground,
+.iconOsd .iconOsdIcon,
 legend {
   color: var(--main-text);
 }
@@ -301,18 +282,6 @@ legend {
 
 .iconOsd {
   background-color: var(--second-background);
-}
-
-.iconOsd .iconOsdIcon {
-  color: var(--main-text);
-}
-
-.iconOsdProgressOuter {
-  background-color: var(--hover-background);
-}
-
-.iconOsdProgressInner {
-  background-color: var(--main-color);
 }
 
 /* this has to be background, not background-color for some reason */
