@@ -283,6 +283,10 @@ legend {
   background-color: var(--second-background);
 }
 
+.osdTextContainer, .osdTimeText {
+  color: var(--main-text);
+}
+
 /* this has to be background, not background-color for some reason */
 div[role=presentation].jstree-wholerow-clicked {
   background: var(--hover-background) !important;
