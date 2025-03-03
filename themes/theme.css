@@ -294,3 +294,7 @@ div[role=presentation].jstree-wholerow-clicked {
   color: var(--main-text) !important;
   background-color: var(--hover-background) !important;
 }
+
+.mdl-spinner__layer {
+  border-color: var(--main-color);
+}
