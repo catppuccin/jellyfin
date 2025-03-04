@@ -185,6 +185,7 @@ html {
 .MuiButtonBase-root,
 .MuiSvgIcon-root,
 .listItemButton,
+.checkboxListLabel,
 .lnkMediaFolder {
   color: var(--main-text) !important;
 }
@@ -301,4 +302,9 @@ div[role=presentation].jstree-wholerow-clicked {
 
 .mdl-spinner__layer {
   border-color: var(--main-color);
+}
+
+.infoBanner {
+  color: var(--main-text);
+  background: var(--second-background);     
 }
