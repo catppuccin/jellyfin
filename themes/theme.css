@@ -206,7 +206,8 @@ html {
   outline-color: var(--main-color);
 }
 
-.MuiToolbar-root {
+.MuiToolbar-root,
+.collapseContent {
   background-color: var(--main-background);
 }
 
@@ -306,5 +307,5 @@ div[role=presentation].jstree-wholerow-clicked {
 
 .infoBanner {
   color: var(--main-text);
-  background: var(--second-background);     
+  background: var(--second-background);
 }
