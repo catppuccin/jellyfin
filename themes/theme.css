@@ -221,7 +221,7 @@ html {
   color: var(--main-background);
 }
 
-.alphaPickerRow {
+.alphaPickerRow, .devices-subheader {
   color: var(--dimmer-text);
 }
 
@@ -285,7 +285,7 @@ legend {
   background-color: var(--second-background);
 }
 
-.osdTextContainer, .osdTimeText {
+.osdTextContainer, .osdTimeText, .cardContent div {
   color: var(--main-text);
 }
 
@@ -305,7 +305,15 @@ div[role=presentation].jstree-wholerow-clicked {
   border-color: var(--main-color);
 }
 
-.infoBanner {
+.infoBanner, .cardContent {
   color: var(--main-text);
   background: var(--second-background);
+}
+
+.itemProgressBar.playbackProgress .itemProgressBarForeground {
+  background-color: var(--main-color) !important;
+}
+
+.itemProgressBar.backgroundProgress .itemProgressBarForeground {
+  background-color: var(--hover-background) !important;
 }
