@@ -186,7 +186,10 @@ html {
 .MuiSvgIcon-root,
 .listItemButton,
 .checkboxListLabel,
-.lnkMediaFolder {
+.lnkMediaFolder,
+.sessionAppName,
+.sessionNowPlayingInfo,
+.sessionNowPlayingTime {
   color: var(--main-text) !important;
 }
 
@@ -285,7 +288,7 @@ legend {
   background-color: var(--second-background);
 }
 
-.osdTextContainer, .osdTimeText, .cardContent div {
+.osdTextContainer, .osdTimeText {
   color: var(--main-text);
 }
 
