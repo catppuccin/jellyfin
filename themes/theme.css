@@ -322,3 +322,7 @@ div[role=presentation].jstree-wholerow-clicked {
 .itemProgressBar.backgroundProgress .itemProgressBarForeground {
   background-color: var(--hover-background) !important;
 }
+
+.nowPlayingInfoControls {
+  padding-left: 10px;
+}
