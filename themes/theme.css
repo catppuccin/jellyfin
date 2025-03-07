@@ -178,7 +178,8 @@ html {
 .mdl-slider,
 .headerRight,
 .headerLeft,
-.button-link {
+.button-link,
+.upNextDialog-countdownText {
   color: var(--main-color);
 }
 
@@ -262,6 +263,7 @@ html {
 .paper-icon-button-light,
 .emby-button-foreground,
 .iconOsd .iconOsdIcon,
+.upNextContainer,
 legend {
   color: var(--main-text);
 }
