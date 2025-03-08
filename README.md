@@ -6,9 +6,9 @@
 </h3>
 
 <p align="center">
-    <a href="https://github.com/adamperkowski/jellyfin/stargazers"><img src="https://img.shields.io/github/stars/adamperkowski/jellyfin?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/template/issues"><img src="https://img.shields.io/github/issues/adamperkowski/jellyfin?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-    <a href="https://github.com/adamperkowski/jellyfin/contributors"><img src="https://img.shields.io/github/contributors/adamperkowski/jellyfin?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/jellyfin/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/jellyfin?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/template/issues"><img src="https://img.shields.io/github/issues/catppuccin/jellyfin?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/jellyfin/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/jellyfin?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -38,19 +38,19 @@
 
 1. Copy the theme import rule:
     ```css
-    @import url('https://adamperkowski.github.io/jellyfin/theme.css');
+    @import url('https://catppuccin.github.io/jellyfin/theme.css');
     ```
 2. Open settings, navigate to Display and paste the CSS into the section called "Custom CSS code"
 3. Copy your preferred flavor's import rule and paste it **after** the theme import:
     ```css
     /* 🌻 Latte */
-    @import url('https://adamperkowski.github.io/jellyfin/catppuccin-latte.css');
+    @import url('https://catppuccin.github.io/jellyfin/catppuccin-latte.css');
     /* 🪴 Frappé */
-    @import url('https://adamperkowski.github.io/jellyfin/catppuccin-frappe.css');
+    @import url('https://catppuccin.github.io/jellyfin/catppuccin-frappe.css');
     /* 🌺 Macchiato */
-    @import url('https://adamperkowski.github.io/jellyfin/catppuccin-macchiato.css');
+    @import url('https://catppuccin.github.io/jellyfin/catppuccin-macchiato.css');
     /* 🌿 Mocha */
-    @import url('https://adamperkowski.github.io/jellyfin/catppuccin-mocha.css');
+    @import url('https://catppuccin.github.io/jellyfin/catppuccin-mocha.css');
     ```
 4. Press save and you're done!
 

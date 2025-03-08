@@ -31,7 +31,7 @@ jobs:
           mkdir -p build
           cp themes/*.css build
           cd build
-          sed -i 's/\[URL\]/https:\/\/adamperkowski.github.io\/jellyfin/g' *.css
+          sed -i 's/\[URL\]/https:\/\/catppuccin.github.io\/jellyfin/g' *.css
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
