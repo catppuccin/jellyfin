@@ -7,7 +7,7 @@
 
 <p align="center">
     <a href="https://github.com/catppuccin/jellyfin/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/jellyfin?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/template/issues"><img src="https://img.shields.io/github/issues/catppuccin/jellyfin?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/jellyfin/issues"><img src="https://img.shields.io/github/issues/catppuccin/jellyfin?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
     <a href="https://github.com/catppuccin/jellyfin/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/jellyfin?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
