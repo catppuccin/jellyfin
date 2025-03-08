@@ -38,19 +38,19 @@
 
 1. Copy the theme import rule:
     ```css
-    @import url('https://catppuccin.github.io/jellyfin/theme.css');
+    @import url('https://jellyfin.catppuccin.com/theme.css');
     ```
 2. Open settings, navigate to Display and paste the CSS into the section called "Custom CSS code"
 3. Copy your preferred flavor's import rule and paste it **after** the theme import:
     ```css
     /* 🌻 Latte */
-    @import url('https://catppuccin.github.io/jellyfin/catppuccin-latte.css');
+    @import url('https://jellyfin.catppuccin.com/catppuccin-latte.css');
     /* 🪴 Frappé */
-    @import url('https://catppuccin.github.io/jellyfin/catppuccin-frappe.css');
+    @import url('https://jellyfin.catppuccin.com/catppuccin-frappe.css');
     /* 🌺 Macchiato */
-    @import url('https://catppuccin.github.io/jellyfin/catppuccin-macchiato.css');
+    @import url('https://jellyfin.catppuccin.com/catppuccin-macchiato.css');
     /* 🌿 Mocha */
-    @import url('https://catppuccin.github.io/jellyfin/catppuccin-mocha.css');
+    @import url('https://jellyfin.catppuccin.com/catppuccin-mocha.css');
     ```
 4. Press save and you're done!
 
