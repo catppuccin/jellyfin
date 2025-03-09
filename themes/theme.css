@@ -151,13 +151,13 @@ html {
 #deviceDeleteAll,
 .btnDeleteImage,
 .btnResetPassword {
-  color: var(--main-background);
-  background: var(--red-color);
+  color: var(--main-background) !important;
+  background: var(--red-color) !important;
 }
 
 .btnRefresh {
-  background: var(--main-color);
-  color: var(--main-background);
+  background: var(--main-color) !important;
+  color: var(--main-background) !important;
 }
 
 .backgroundContainer.withBackdrop,
@@ -210,6 +210,7 @@ html {
   outline-color: var(--main-color);
 }
 
+.nowPlayingPlaylist,
 .MuiToolbar-root,
 .collapseContent {
   background-color: var(--main-background);
@@ -308,6 +309,10 @@ div[role=presentation].jstree-wholerow-clicked {
 
 .infoBanner {
   color: var(--main-text);
+  background: var(--second-background);
+}
+
+.playlistSectionButton {
   background: var(--second-background);
 }
 
