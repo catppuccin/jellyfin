@@ -18,6 +18,8 @@
   --main-background: #303446;
   --second-background: #292c3c;
   --hover-background: #414559;
+  --main-background-transparent: #303446dd;
+  --hover-background-transparent: #414559bb;
   --main-text: #c6d0f5;
   --dimmer-text: #949cbb;
   --green-color: var(--green);

@@ -328,3 +328,11 @@ div[role=presentation].jstree-wholerow-clicked {
 .itemProgressBar.backgroundProgress .itemProgressBarForeground {
   background-color: var(--hover-background) !important;
 }
+
+.backgroundContainer.withBackdrop {
+  background-color: var(--main-background-transparent);
+}
+
+.detailPagePrimaryContainer {
+  background-color: var(--hover-background-transparent);
+}
