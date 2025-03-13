@@ -329,10 +329,7 @@ div[role=presentation].jstree-wholerow-clicked {
   background-color: var(--hover-background) !important;
 }
 
+.detailPagePrimaryContainer,
 .backgroundContainer.withBackdrop {
-  background-color: var(--main-background-transparent);
-}
-
-.detailPagePrimaryContainer {
   background-color: var(--main-background-transparent);
 }
