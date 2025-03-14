@@ -99,13 +99,13 @@ html {
 }
 
 .paper-icon-button-light:active:not(:disabled),
-.paper-icon-button-light:hover:not(:disabled),
 .listItem:hover,
 .listItem:focus,
+.navMenuOption-selected,
 .navMenuOption:hover,
 .navMenuOption:focus {
   color: var(--main-color) !important;
-  background-color: var(--hover-background);
+  background-color: var(--hover-background) !important;
 }
 
 .listItemIcon:not(.listItemIcon-transparent) {
@@ -332,4 +332,8 @@ div[role=presentation].jstree-wholerow-clicked {
 .detailPagePrimaryContainer,
 .backgroundContainer.withBackdrop {
   background-color: var(--main-background-transparent);
+}
+
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline {
+  border-color: var(--main-color);
 }
