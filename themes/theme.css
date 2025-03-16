@@ -20,7 +20,6 @@
 .mdl-slider::-moz-range-thumb {background-color: var(--main-color);}
 
 .navMenuOption-selected,
-.listItemButton:focus,
 .iconOsdProgressInner,
 .mdl-slider-background-lower {
   background-color: var(--main-color);
@@ -98,6 +97,7 @@ html {
   background-color: var(--second-background) !important;
 }
 
+.paper-icon-button-light:hover:not(:disabled),
 .paper-icon-button-light:active:not(:disabled),
 .listItem:hover,
 .listItem:focus,
@@ -170,7 +170,6 @@ html {
 .selectLabelFocused,
 .textareaLabelFocused,
 .button-link,
-.button-flat:focus,
 .button-flat:hover,
 .itemAction:focus,
 .emby-tab-button-active>.emby-button-foreground,
