@@ -333,6 +333,23 @@ div[role=presentation].jstree-wholerow-clicked {
   background-color: var(--main-background-transparent);
 }
 
-.emby-checkbox:focus:not(:checked) + span + .checkboxOutline {
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline, .itemSelectionPanel {
   border-color: var(--main-color);
+}
+
+.selectionCommandsPanel {
+  background-color: var(--main-color);
+  color: var(--main-background) !important;
+}
+
+.selectionCommandsPanel .itemSelectionCount {
+  color: var(--main-background) !important;
+}
+
+.selectionCommandsPanel > button > .material-icons {
+  color: var(--main-background);
+}
+
+.selectionCommandsPanel > button:hover > .material-icons {
+  color: var(--main-text);
 }
