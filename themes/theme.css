@@ -155,6 +155,7 @@ html {
   background: var(--red-color) !important;
 }
 
+.selectionCommandsPanel,
 .btnRefresh {
   background: var(--main-color) !important;
   color: var(--main-background) !important;
@@ -267,6 +268,8 @@ html {
 .emby-button-foreground,
 .iconOsd .iconOsdIcon,
 .upNextContainer,
+.osdTextContainer, .osdTimeText,
+.selectionCommandsPanel > button:hover > .material-icons,
 legend {
   color: var(--main-text);
 }
@@ -280,14 +283,11 @@ legend {
   border-color: var(--hover-background) !important;
 }
 
+.selectionCommandsPanel > button > .material-icons,
 .checkboxOutline .checkboxIcon-checked,
 .sessionAppName,
 .sessionNowPlayingInfo {
   color: var(--main-background);
-}
-
-.osdTextContainer, .osdTimeText {
-  color: var(--main-text);
 }
 
 /* this has to be background, not background-color for some reason */
@@ -337,19 +337,6 @@ div[role=presentation].jstree-wholerow-clicked {
   border-color: var(--main-color);
 }
 
-.selectionCommandsPanel {
-  background-color: var(--main-color);
-  color: var(--main-background) !important;
-}
-
 .selectionCommandsPanel .itemSelectionCount {
   color: var(--main-background) !important;
-}
-
-.selectionCommandsPanel > button > .material-icons {
-  color: var(--main-background);
-}
-
-.selectionCommandsPanel > button:hover > .material-icons {
-  color: var(--main-text);
 }
