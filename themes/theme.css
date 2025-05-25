@@ -29,7 +29,8 @@
 .mdl-slider-background-flex,
 .formDialogHeader:not(.formDialogHeader-clear),
 .formDialogFooter:not(.formDialogFooter-clear),
-.cardBox:not(.visualCardBox) .cardPadder {
+.cardBox:not(.visualCardBox) .cardPadder,
+.MuiListItemButton-root:hover {
   background-color: var(--hover-background);
 }
 
@@ -275,6 +276,8 @@ legend {
 }
 
 .fieldDescription,
+.MuiListItemText-secondary,
+.MuiListSubheader-root,
 .secondary {
   color: var(--dimmer-text) !important;
 }
@@ -339,4 +342,8 @@ div[role=presentation].jstree-wholerow-clicked {
 
 .selectionCommandsPanel .itemSelectionCount {
   color: var(--main-background) !important;
+}
+
+.MuiListItemButton-root img {
+  background-color: transparent;
 }
