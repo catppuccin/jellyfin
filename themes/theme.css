@@ -347,3 +347,25 @@ div[role=presentation].jstree-wholerow-clicked {
 .MuiListItemButton-root img {
   background-color: transparent;
 }
+
+.Mui-TableHeadCell-Content-Labels, .MuiTableCell-body {
+  color: var(--main-text);
+}
+
+.Mui-TableHeadCell-Content-Labels .MuiTableSortLabel-icon {
+  color: var(--main-text) !important;
+}
+
+.MuiChip-filledInfo {
+  color: var(--main-background);
+  background-color: var(--blue);
+}
+
+.MuiChip-filledError {
+  color: var(--main-background);
+  background-color: var(--red-color);
+}
+
+.MuiFormLabel-colorPrimary, .MuiTablePagination-root, .MuiTablePagination-root .MuiSelect-select {
+  color: var(--main-text);
+}
