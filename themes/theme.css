@@ -397,7 +397,7 @@ div[role=presentation].jstree-wholerow-clicked {
   color: var(--main-background) !important;
 }
 
-.MuiAccordion-root, .MuiFormControlLabel-label.Mui-disabled, .mediaInfoOfficialRating {
+.MuiAccordion-root, .MuiFormControlLabel-label.Mui-disabled, .mediaInfoOfficialRating, .guideProgramNameCaretIcon, .mediaInfoItem {
   color: var(--main-text) !important;
 }
 
@@ -407,4 +407,13 @@ div[role=presentation].jstree-wholerow-clicked {
 
 .starIcon {
   color: var(--yellow);
+}
+
+.programCell-active {
+  background-color: var(--second-background) !important;
+}
+
+.programCell:focus {
+  color: var(--main-background) !important;
+  background-color: var(--main-color) !important;
 }
