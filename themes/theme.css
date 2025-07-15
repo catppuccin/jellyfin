@@ -239,8 +239,12 @@ html {
   color: var(--main-color) !important;
 }
 
-.emby-button.show-focus:focus {
+.layout-tv .emby-button:not(.emby-tab-button).show-focus:focus {
   background: var(--main-color) !important;
+}
+
+.layout-tv .emby-button:not(.emby-tab-button).show-focus:focus .listItem,.layout-tv .emby-button:not(.emby-tab-button).show-focus:focus .listItemBodyText {
+  color: var(--main-background) !important;
 }
 
 .sectionTitle,
@@ -393,10 +397,14 @@ div[role=presentation].jstree-wholerow-clicked {
   color: var(--main-background) !important;
 }
 
-.MuiAccordion-root, .MuiFormControlLabel-label.Mui-disabled {
+.MuiAccordion-root, .MuiFormControlLabel-label.Mui-disabled, .mediaInfoOfficialRating {
   color: var(--main-text) !important;
 }
 
 .emby-select-withcolor > option {
   background-color: var(--main-background);
+}
+
+.starIcon {
+  color: var(--yellow);
 }
