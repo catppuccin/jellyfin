@@ -276,6 +276,7 @@ html {
 .upNextContainer,
 .osdTextContainer, .osdTimeText,
 .selectionCommandsPanel > button:hover > .material-icons,
+.paperListLabel,
 legend {
   color: var(--main-text);
 }
@@ -324,7 +325,8 @@ div[role=presentation].jstree-wholerow-clicked {
 }
 
 .iconOsd,
-.cardContent.defaultCardBackground {
+.cardContent.defaultCardBackground,
+.cardContent .defaultCardBackground {
   background-color: var(--second-background);
 }
 
@@ -413,7 +415,12 @@ div[role=presentation].jstree-wholerow-clicked {
   background-color: var(--second-background) !important;
 }
 
-.programCell:focus {
+div[data-role="controlgroup"] .emby-button {
+  color: var(--main-text) !important;
+  background-color: var(--second-background) !important;
+}
+
+.programCell:focus, div[data-role="controlgroup"] a.ui-btn-active {
   color: var(--main-background) !important;
   background-color: var(--main-color) !important;
 }
