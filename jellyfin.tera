@@ -30,4 +30,6 @@ whiskers:
   --dimmer-text: #{{overlay2.hex}};
   --green-color: var(--green);
   --red-color: var(--red);
+  --white-text: {% if flavor.identifier == "latte" %}#{{base.hex}}{% else %}#{{text.hex}}{% endif %};
+  --dark-background: {% if flavor.identifier == "latte" %}#{{text.hex}}{% else %}#{{mantle.hex}}{% endif %};
 }

@@ -189,9 +189,6 @@ html {
 .listItemButton,
 .checkboxListLabel,
 .lnkMediaFolder,
-.sessionAppName,
-.sessionNowPlayingInfo,
-.sessionNowPlayingTime,
 .MuiTypography-root {
   color: var(--main-text) !important;
 }
@@ -274,11 +271,25 @@ html {
 .emby-button-foreground,
 .iconOsd .iconOsdIcon,
 .upNextContainer,
-.osdTextContainer, .osdTimeText,
 .selectionCommandsPanel > button:hover > .material-icons,
 .paperListLabel,
 legend {
   color: var(--main-text);
+}
+
+.osdTextContainer, .osdTimeText,
+.transparentDocument .paper-icon-button-light,
+.transparentDocument .pageTitle,
+.cardOverlayContainer .paper-icon-button-light,
+.sessionAppName,
+.sessionNowPlayingInfo,
+.sessionNowPlayingTime {
+  color: var(--white-text);
+}
+
+.devicesList .cardContent.defaultCardBackground,
+.cardContent.defaultCardBackground:has(.sessionNowPlayingContent) {
+  background-color: var(--dark-background) !important;
 }
 
 .fieldDescription,
@@ -293,9 +304,7 @@ legend {
 }
 
 .selectionCommandsPanel > button > .material-icons,
-.checkboxOutline .checkboxIcon-checked,
-.sessionAppName,
-.sessionNowPlayingInfo {
+.checkboxOutline .checkboxIcon-checked {
   color: var(--main-background);
 }
 
