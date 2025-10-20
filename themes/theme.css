@@ -36,7 +36,6 @@
 
 .backgroundContainer,
 .formDialogHeader,
-.detailRibbon,
 .dialog,
 .dashboardGeneralForm,
 html {
@@ -64,6 +63,10 @@ html {
 .cardBox,
 .paperList {
   background: var(--main-background);
+}
+
+.noBackdropTransparency .detailPagePrimaryContainer {
+  background: var(--second-background);
 }
 
 .playstatebutton-icon-played,
@@ -347,7 +350,7 @@ div[role=presentation].jstree-wholerow-clicked {
   background-color: var(--hover-background) !important;
 }
 
-.detailPagePrimaryContainer,
+.detailRibbon,
 .backgroundContainer.withBackdrop {
   background-color: var(--main-background-transparent);
 }
