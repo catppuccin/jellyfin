@@ -1,0 +1,25 @@
+name: check
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  formatting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: run prettier
+        uses: creyD/prettier_action@v4.6
+        with:
+          dry: true
+          prettier_options: "--check ."
+  whiskers:
+    needs: formatting
+    uses: catppuccin/actions/.github/workflows/whiskers-check.yml@v1
+    with:
+      args: jellyfin.tera
+    secrets: inherit

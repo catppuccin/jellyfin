@@ -16,8 +16,12 @@
   background-color: var(--dimmer-text);
 }
 
-.mdl-slider::-webkit-slider-thumb {background-color: var(--main-color);}
-.mdl-slider::-moz-range-thumb {background-color: var(--main-color);}
+.mdl-slider::-webkit-slider-thumb {
+  background-color: var(--main-color);
+}
+.mdl-slider::-moz-range-thumb {
+  background-color: var(--main-color);
+}
 
 .navMenuOption-selected,
 .iconOsdProgressInner,
@@ -177,7 +181,7 @@ html {
 .button-link,
 .button-flat:hover,
 .itemAction:focus,
-.emby-tab-button-active>.emby-button-foreground,
+.emby-tab-button-active > .emby-button-foreground,
 .emby-button-foreground:focus,
 .mdl-slider,
 .headerRight,
@@ -228,7 +232,8 @@ html {
   color: var(--main-background);
 }
 
-.alphaPickerRow, .devices-subheader {
+.alphaPickerRow,
+.devices-subheader {
   color: var(--dimmer-text);
 }
 
@@ -243,7 +248,8 @@ html {
   background: var(--main-color) !important;
 }
 
-.layout-tv .emby-button:not(.emby-tab-button).show-focus:focus .listItem,.layout-tv .emby-button:not(.emby-tab-button).show-focus:focus .listItemBodyText {
+.layout-tv .emby-button:not(.emby-tab-button).show-focus:focus .listItem,
+.layout-tv .emby-button:not(.emby-tab-button).show-focus:focus .listItemBodyText {
   color: var(--main-background) !important;
 }
 
@@ -280,7 +286,8 @@ legend {
   color: var(--main-text);
 }
 
-.osdTextContainer, .osdTimeText,
+.osdTextContainer,
+.osdTimeText,
 .transparentDocument .paper-icon-button-light,
 .transparentDocument .pageTitle,
 .cardOverlayContainer .paper-icon-button-light,
@@ -312,7 +319,7 @@ legend {
 }
 
 /* this has to be background, not background-color for some reason */
-div[role=presentation].jstree-wholerow-clicked {
+div[role="presentation"].jstree-wholerow-clicked {
   background: var(--hover-background) !important;
 }
 
@@ -355,7 +362,8 @@ div[role=presentation].jstree-wholerow-clicked {
   background-color: var(--main-background-transparent);
 }
 
-.emby-checkbox:focus:not(:checked) + span + .checkboxOutline, .itemSelectionPanel {
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline,
+.itemSelectionPanel {
   border-color: var(--main-color);
 }
 
@@ -367,7 +375,8 @@ div[role=presentation].jstree-wholerow-clicked {
   background-color: transparent;
 }
 
-.Mui-TableHeadCell-Content-Labels, .MuiTableCell-body {
+.Mui-TableHeadCell-Content-Labels,
+.MuiTableCell-body {
   color: var(--main-text);
 }
 
@@ -385,15 +394,20 @@ div[role=presentation].jstree-wholerow-clicked {
   background-color: var(--red-color);
 }
 
-.MuiFormLabel-colorPrimary, .MuiTablePagination-root, .MuiTablePagination-root .MuiSelect-select, .MuiTableCell-head {
+.MuiFormLabel-colorPrimary,
+.MuiTablePagination-root,
+.MuiTablePagination-root .MuiSelect-select,
+.MuiTableCell-head {
   color: var(--main-text);
 }
 
-.MuiAlert-standard.MuiAlert-colorInfo, .MuiAlert-standard.MuiAlert-colorInfo .MuiSvgIcon-root {
+.MuiAlert-standard.MuiAlert-colorInfo,
+.MuiAlert-standard.MuiAlert-colorInfo .MuiSvgIcon-root {
   color: var(--sky) !important;
 }
 
-.MuiAlert-standard.MuiAlert-colorSuccess, .MuiAlert-standard.MuiAlert-colorSuccess .MuiSvgIcon-root {
+.MuiAlert-standard.MuiAlert-colorSuccess,
+.MuiAlert-standard.MuiAlert-colorSuccess .MuiSvgIcon-root {
   color: var(--green) !important;
 }
 
@@ -411,7 +425,11 @@ div[role=presentation].jstree-wholerow-clicked {
   color: var(--main-background) !important;
 }
 
-.MuiAccordion-root, .MuiFormControlLabel-label.Mui-disabled, .mediaInfoOfficialRating, .guideProgramNameCaretIcon, .mediaInfoItem {
+.MuiAccordion-root,
+.MuiFormControlLabel-label.Mui-disabled,
+.mediaInfoOfficialRating,
+.guideProgramNameCaretIcon,
+.mediaInfoItem {
   color: var(--main-text) !important;
 }
 
@@ -432,7 +450,8 @@ div[data-role="controlgroup"] .emby-button {
   background-color: var(--second-background) !important;
 }
 
-.programCell:focus, div[data-role="controlgroup"] a.ui-btn-active {
+.programCell:focus,
+div[data-role="controlgroup"] a.ui-btn-active {
   color: var(--main-background) !important;
   background-color: var(--main-color) !important;
 }

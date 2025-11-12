@@ -1,0 +1,5 @@
+!themes/*.css
+
+**/*.yml
+**/*.md
+**/*.json
