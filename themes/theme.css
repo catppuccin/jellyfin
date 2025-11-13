@@ -237,6 +237,10 @@ html {
   color: var(--dimmer-text);
 }
 
+.alphaPickerButton {
+  color: var(--hover-background);
+}
+
 .buttonActive,
 .button-accent-flat,
 .metadataSidebarIcon,
@@ -305,6 +309,7 @@ legend {
 .fieldDescription,
 .MuiListItemText-secondary,
 .MuiListSubheader-root,
+.alphaPickerButton-selected,
 .secondary {
   color: var(--dimmer-text) !important;
 }
