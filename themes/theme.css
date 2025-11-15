@@ -29,10 +29,14 @@
   background: var(--main-color) !important;
 }
 
-.mdl-slider::-moz-range-thumb,
-.mdl-slider::-webkit-slider-thumb,
 .iconOsdProgressInner,
 .mdl-slider-background-lower {
+  background-color: var(--main-color);
+}
+.mdl-slider::-moz-range-thumb {
+  background-color: var(--main-color);
+}
+.mdl-slider::-webkit-slider-thumb {
   background-color: var(--main-color);
 }
 
@@ -99,8 +103,11 @@
 .btnAddTrigger:focus,
 .btnAddUser,
 .btnAddUser:focus,
-::-moz-selection,
 ::selection {
+  color: var(--main-background);
+  background: var(--main-color);
+}
+::-moz-selection {
   color: var(--main-background);
   background: var(--main-color);
 }
