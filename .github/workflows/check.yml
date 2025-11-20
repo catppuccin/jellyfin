@@ -11,7 +11,7 @@ jobs:
   formatting:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: run prettier
         uses: creyD/prettier_action@v4.6
         with:
