@@ -5,6 +5,13 @@ whiskers:
     - flavor
   filename: 'themes/catppuccin-{{flavor.identifier}}.css'
 ---
+/**
+ * Catppuccin for Jellyfin
+ * Copyright (c) 2021 Catppuccin
+ * Licensed under the MIT License
+ * https://github.com/catppuccin/jellyfin/blob/main/LICENSE
+ */
+
 :root {
   --rosewater: #{{rosewater.hex}};
   --flamingo: #{{flamingo.hex}};
