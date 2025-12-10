@@ -30,13 +30,17 @@ whiskers:
 
   --main-color: var(--mauve);
   --main-background: #{{base.hex}};
-  --second-background: #{{mantle.hex}};
-  --hover-background: #{{surface0.hex}};
   --main-background-transparent: #{{base.hex}}dd;
-  --main-text: #{{text.hex}};
-  --dimmer-text: #{{overlay2.hex}};
-  --green-color: var(--green);
-  --red-color: var(--red);
-  --white-text: {% if flavor.identifier == "latte" %}#{{base.hex}}{% else %}#{{text.hex}}{% endif %};
   --dark-background: {% if flavor.identifier == "latte" %}#{{text.hex}}{% else %}#{{mantle.hex}}{% endif %};
+  --hover-background: #{{surface0.hex}};
+  --second-background: #{{mantle.hex}};
+  --main-text: #{{text.hex}};
+  --white-text: {% if flavor.identifier == "latte" %}#{{base.hex}}{% else %}#{{text.hex}}{% endif %};
+  --dimmer-text: #{{overlay2.hex}};
+
+  --red-color: var(--red);
+  --green-color: var(--green);
+  --blue-color: var(--blue);
+  --lighter-blue-color: var(--sky);
+  --yellow-color: var(--yellow);
 }
