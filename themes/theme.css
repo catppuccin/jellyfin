@@ -135,7 +135,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 
 .MuiButton-containedPrimary {
   color: var(--main-background) !important;
-  background-color: var(--lighter-blue-color) !important;
+  background-color: var(--cyan-color) !important;
 }
 
 .MuiButton-containedError {
@@ -388,7 +388,7 @@ legend {
 
 .MuiAlert-standard.MuiAlert-colorInfo,
 .MuiAlert-standard.MuiAlert-colorInfo .MuiSvgIcon-root {
-  color: var(--lighter-blue-color) !important;
+  color: var(--cyan-color) !important;
 }
 
 .starIcon {
