@@ -41,6 +41,6 @@ whiskers:
   --red-color: var(--red);
   --green-color: var(--green);
   --blue-color: var(--blue);
-  --lighter-blue-color: var(--sky);
+  --cyan-color: var(--sky);
   --yellow-color: var(--yellow);
 }
