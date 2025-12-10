@@ -130,12 +130,12 @@ div[data-role="controlgroup"] a.ui-btn-active {
 
 .MuiChip-filledInfo {
   color: var(--main-background);
-  background-color: var(--blue);
+  background-color: var(--blue-color);
 }
 
 .MuiButton-containedPrimary {
   color: var(--main-background) !important;
-  background-color: var(--sky) !important;
+  background-color: var(--lighter-blue-color) !important;
 }
 
 .MuiButton-containedError {
@@ -379,18 +379,18 @@ legend {
 
 .MuiAlert-standard.MuiAlert-colorSuccess,
 .MuiAlert-standard.MuiAlert-colorSuccess .MuiSvgIcon-root {
-  color: var(--green) !important;
+  color: var(--green-color) !important;
 }
 
 .notifications {
-  color: var(--blue) !important;
+  color: var(--blue-color) !important;
 }
 
 .MuiAlert-standard.MuiAlert-colorInfo,
 .MuiAlert-standard.MuiAlert-colorInfo .MuiSvgIcon-root {
-  color: var(--sky) !important;
+  color: var(--lighter-blue-color) !important;
 }
 
 .starIcon {
-  color: var(--yellow);
+  color: var(--yellow-color);
 }

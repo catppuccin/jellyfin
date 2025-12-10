@@ -23,13 +23,17 @@
 
   --main-color: var(--mauve);
   --main-background: #24273a;
-  --second-background: #1e2030;
-  --hover-background: #363a4f;
   --main-background-transparent: #24273add;
-  --main-text: #cad3f5;
-  --dimmer-text: #939ab7;
-  --green-color: var(--green);
-  --red-color: var(--red);
-  --white-text: #cad3f5;
   --dark-background: #1e2030;
+  --hover-background: #363a4f;
+  --second-background: #1e2030;
+  --main-text: #cad3f5;
+  --white-text: #cad3f5;
+  --dimmer-text: #939ab7;
+
+  --red-color: var(--red);
+  --green-color: var(--green);
+  --blue-color: var(--blue);
+  --lighter-blue-color: var(--sky);
+  --yellow-color: var(--yellow);
 }
