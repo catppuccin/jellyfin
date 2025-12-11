@@ -63,6 +63,23 @@ The accent color can be overridden by adding the following **after** the imports
 }
 ```
 
+### Creating your own theme
+
+All colors can be easily changed by overriding [these CSS variables](./themes/catppuccin-mocha.css#L24-L38).
+
+<details>
+    <summary><b>Hall of Fame</b></summary>
+    <p>These amazing themes all base off of Catppuccin:</p>
+    <table>
+        <tr>
+            <th><a href="https://github.com/everviolet/jellyfin">evergarden</a></th>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/everviolet/jellyfin"><img src="https://github.com/everviolet/jellyfin/raw/main/assets/preview.webp" alt="evergarten preview"/></a></td>
+        </tr>
+    </table>
+</details>
+
 ## 💝 Thanks to
 
 - [Adam](https://github.com/adamperkowski)
