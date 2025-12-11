@@ -56,7 +56,7 @@
 
 ## Customization
 
-The accent color can be overrided by adding the following **after** the imports:
+The accent color can be overridden by adding the following **after** the imports:
 ```css
 :root {
     --main-color: var(--sapphire);
