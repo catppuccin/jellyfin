@@ -97,7 +97,6 @@
   color: var(--main-background);
 }
 
-.MuiButton-contained .MuiSvgIcon-root,
 .selectionCommandsPanel .itemSelectionCount,
 .layout-tv .emby-button:not(.emby-tab-button).show-focus:focus .listItem,
 .layout-tv .emby-button:not(.emby-tab-button).show-focus:focus .listItemBodyText {
@@ -134,26 +133,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
   background-color: var(--main-color) !important;
 }
 
-.MuiChip-filledInfo {
-  color: var(--main-background);
-  background-color: var(--blue-color);
-}
-
-.MuiButton-containedPrimary {
-  color: var(--main-background) !important;
-  background-color: var(--cyan-color) !important;
-}
-
-.MuiButton-containedError {
-  color: var(--main-background) !important;
-  background-color: var(--red-color) !important;
-}
-
-.MuiChip-filledError {
-  color: var(--main-background);
-  background-color: var(--red-color);
-}
-
 #btnShutdown,
 #deviceDeleteAll,
 .btnDeleteImage,
@@ -177,13 +156,8 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .emby-select-withcolor > option,
 .backgroundContainer,
 .nowPlayingPlaylist,
-.MuiToolbar-root,
 .collapseContent {
   background-color: var(--main-background);
-}
-
-.Mui-selected {
-  background-color: var(--main-background) !important;
 }
 
 .formDialogHeader,
@@ -242,18 +216,6 @@ div[data-role="controlgroup"] .emby-button,
   background-color: var(--second-background) !important;
 }
 
-.MuiPaper-root,
-.MuiBox-root,
-.MuiTableContainer-root,
-.MuiTableRow-root,
-.MuiTableCell-root,
-.MuiTableFooter-root,
-.MuiList-root {
-  background-color: var(--second-background);
-  border-color: var(--hover-background) !important;
-  outline-color: var(--main-color);
-}
-
 .alphaPickerButton {
   color: var(--hover-background);
 }
@@ -262,16 +224,11 @@ div[data-role="controlgroup"] .emby-button,
   background: var(--hover-background);
 }
 
-div[role="presentation"].jstree-wholerow-clicked {
-  background: var(--hover-background) !important;
-}
-
 .iconOsdProgressOuter,
 .mdl-slider-background-flex,
 .formDialogHeader:not(.formDialogHeader-clear),
 .formDialogFooter:not(.formDialogFooter-clear),
-.cardBox:not(.visualCardBox) .cardPadder,
-.MuiListItemButton-root:hover {
+.cardBox:not(.visualCardBox) .cardPadder {
   background-color: var(--hover-background);
 }
 
@@ -283,16 +240,6 @@ div[role="presentation"].jstree-wholerow-clicked {
   border-color: var(--hover-background) !important;
 }
 
-.MuiListItemButton-root img {
-  background-color: transparent;
-}
-
-.MuiTableCell-body,
-.Mui-TableHeadCell-Content-Labels,
-.MuiFormLabel-colorPrimary,
-.MuiTablePagination-root,
-.MuiTablePagination-root .MuiSelect-select,
-.MuiTableCell-head,
 .sectionTitle,
 .cardText,
 .pageTitle,
@@ -309,7 +256,6 @@ div[role="presentation"].jstree-wholerow-clicked {
 .sidebarHeader,
 .listItem,
 .listItemBodyText,
-.MuiMenuItem-root,
 .dashboardGeneralForm,
 .dashboardSections,
 .navMenuOption,
@@ -327,26 +273,13 @@ legend {
   color: var(--main-text);
 }
 
-.MuiAccordion-root,
-.MuiFormControlLabel-label.Mui-disabled,
 .mediaInfoOfficialRating,
 .guideProgramNameCaretIcon,
 .mediaInfoItem,
-.Mui-TableHeadCell-Content-Labels .MuiTableSortLabel-icon,
-.MuiButtonBase-root,
-.MuiSvgIcon-root,
 .listItemButton,
 .checkboxListLabel,
-.lnkMediaFolder,
-.MuiTypography-root {
+.lnkMediaFolder {
   color: var(--main-text) !important;
-}
-
-.jstree-hovered,
-.jstree-clicked,
-.jstree-wholerow-hovered {
-  color: var(--main-text) !important;
-  background-color: var(--hover-background) !important;
 }
 
 .alphaPickerRow,
@@ -357,8 +290,6 @@ legend {
 }
 
 .fieldDescription,
-.MuiListItemText-secondary,
-.MuiListSubheader-root,
 .alphaPickerButton-selected,
 .secondary {
   color: var(--dimmer-text) !important;
@@ -388,18 +319,8 @@ legend {
   color: var(--red-color) !important;
 }
 
-.MuiAlert-standard.MuiAlert-colorSuccess,
-.MuiAlert-standard.MuiAlert-colorSuccess .MuiSvgIcon-root {
-  color: var(--green-color) !important;
-}
-
 .notifications {
   color: var(--blue-color) !important;
-}
-
-.MuiAlert-standard.MuiAlert-colorInfo,
-.MuiAlert-standard.MuiAlert-colorInfo .MuiSvgIcon-root {
-  color: var(--cyan-color) !important;
 }
 
 .starIcon {
