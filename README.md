@@ -82,8 +82,8 @@ All colors can be easily changed by overriding [these CSS variables](./themes/ca
 
 ## 💝 Thanks to
 
-- [Adam](https://github.com/adamperkowski)
-- [Isabel](https://github.com/isabelroses)
+- [koi](https://github.com/koibtw)
+- [isabel](https://github.com/isabelroses)
 - [mxgic1337](https://github.com/mxgic1337)
 
 &nbsp;
