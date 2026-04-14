@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - 'main'
+      - "main"
   workflow_dispatch:
 
 permissions:
@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -29,9 +29,9 @@ jobs:
       - name: Prepare files
         run: |
           mkdir -p build
-          cp themes/*.css build
+          find themes -name "*.css" -exec cp --parents {} build/ \;
           cd build
-          sed -i 's/\[URL\]/https:\/\/catppuccin.github.io\/jellyfin/g' *.css
+          find . -name "*.css" -exec sed -i 's/\\[URL\\]/https:\/\/catppuccin.github.io\/jellyfin/g' {} +
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
