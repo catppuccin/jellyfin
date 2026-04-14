@@ -1,0 +1,39 @@
+/**
+ * Catppuccin for Jellyfin
+ * Copyright (c) 2021 Catppuccin
+ * Licensed under the MIT License
+ * https://github.com/catppuccin/jellyfin/blob/main/LICENSE
+ */
+
+:root {
+  --rosewater: #dc8a78;
+  --flamingo: #dd7878;
+  --pink: #ea76cb;
+  --mauve: #8839ef;
+  --red: #d20f39;
+  --maroon: #e64553;
+  --peach: #fe640b;
+  --yellow: #df8e1d;
+  --green: #40a02b;
+  --teal: #179299;
+  --sky: #04a5e5;
+  --sapphire: #209fb5;
+  --blue: #1e66f5;
+  --lavender: #7287fd;
+
+  --main-color: var(--yellow);
+  --main-background: #eff1f5;
+  --main-background-transparent: #eff1f5dd;
+  --dark-background: #4c4f69;
+  --hover-background: #ccd0da;
+  --second-background: #e6e9ef;
+  --main-text: #4c4f69;
+  --white-text: #eff1f5;
+  --dimmer-text: #7c7f93;
+
+  --red-color: var(--red);
+  --green-color: var(--green);
+  --blue-color: var(--blue);
+  --cyan-color: var(--sky);
+  --yellow-color: var(--yellow);
+}

@@ -3,7 +3,8 @@ whiskers:
   version: "^2.9.0"
   matrix:
     - flavor
-  filename: "themes/catppuccin-{{ flavor.identifier }}.css"
+    - accent
+  filename: "themes/{{ flavor.identifier }}/catppuccin-{{ flavor.identifier }}-{{ accent }}.css"
   hex_format: "#{{r}}{{g}}{{b}}{{z}}"
 ---
 /**
@@ -29,7 +30,7 @@ whiskers:
   --blue: {{ blue.hex }};
   --lavender: {{ lavender.hex }};
 
-  --main-color: var(--mauve);
+  --main-color: var(--{{ accent }});
   --main-background: {{ base.hex }};
   --main-background-transparent: {{ base | mod(opacity=0.867) | hex }};
   --dark-background: {% if flavor.light %}{{ text.hex }}{% else %}{{ mantle.hex }}{% endif %};
