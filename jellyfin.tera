@@ -1,9 +1,10 @@
 ---
 whiskers:
-  version: ^2.5.1
+  version: "^2.9.0"
   matrix:
     - flavor
-  filename: 'themes/catppuccin-{{flavor.identifier}}.css'
+  filename: "themes/catppuccin-{{ flavor.identifier }}.css"
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
 ---
 /**
  * Catppuccin for Jellyfin
@@ -13,30 +14,30 @@ whiskers:
  */
 
 :root {
-  --rosewater: #{{rosewater.hex}};
-  --flamingo: #{{flamingo.hex}};
-  --pink: #{{pink.hex}};
-  --mauve: #{{mauve.hex}};
-  --red: #{{red.hex}};
-  --maroon: #{{maroon.hex}};
-  --peach: #{{peach.hex}};
-  --yellow: #{{yellow.hex}};
-  --green: #{{green.hex}};
-  --teal: #{{teal.hex}};
-  --sky: #{{sky.hex}};
-  --sapphire: #{{sapphire.hex}};
-  --blue: #{{blue.hex}};
-  --lavender: #{{lavender.hex}};
+  --rosewater: {{ rosewater.hex }};
+  --flamingo: {{ flamingo.hex }};
+  --pink: {{ pink.hex }};
+  --mauve: {{ mauve.hex }};
+  --red: {{ red.hex }};
+  --maroon: {{ maroon.hex }};
+  --peach: {{ peach.hex }};
+  --yellow: {{ yellow.hex }};
+  --green: {{ green.hex }};
+  --teal: {{ teal.hex }};
+  --sky: {{ sky.hex }};
+  --sapphire: {{ sapphire.hex }};
+  --blue: {{ blue.hex }};
+  --lavender: {{ lavender.hex }};
 
   --main-color: var(--mauve);
-  --main-background: #{{base.hex}};
-  --main-background-transparent: #{{base.hex}}dd;
-  --dark-background: {% if flavor.identifier == "latte" %}#{{text.hex}}{% else %}#{{mantle.hex}}{% endif %};
-  --hover-background: #{{surface0.hex}};
-  --second-background: #{{mantle.hex}};
-  --main-text: #{{text.hex}};
-  --white-text: {% if flavor.identifier == "latte" %}#{{base.hex}}{% else %}#{{text.hex}}{% endif %};
-  --dimmer-text: #{{overlay2.hex}};
+  --main-background: {{ base.hex }};
+  --main-background-transparent: {{ base | mod(opacity=0.867) | hex }};
+  --dark-background: {% if flavor.light %}{{ text.hex }}{% else %}{{ mantle.hex }}{% endif %};
+  --hover-background: {{ surface0.hex }};
+  --second-background: {{ mantle.hex }};
+  --main-text: {{ text.hex }};
+  --white-text: {% if flavor.light %}{{ base.hex }}{% else %}{{ text.hex }}{% endif %};
+  --dimmer-text: {{ overlay2.hex }};
 
   --red-color: var(--red);
   --green-color: var(--green);
