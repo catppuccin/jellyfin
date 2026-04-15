@@ -56,7 +56,7 @@
 
 > [!NOTE]
 > For the mauve accent, `-<accent>` is not needed and the import rule can just be:
-    ```css
+>   ```css
     /* 🌻 Latte */
     @import url('https://jellyfin.catppuccin.com/catppuccin-latte.css');
     /* 🪴 Frappé */
