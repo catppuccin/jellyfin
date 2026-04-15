@@ -31,7 +31,9 @@ jobs:
           mkdir -p build
           cp -R themes/*/*.css build
           cd build
-          find . -name "*.css" -exec sed -i 's/\\[URL\\]/https:\/\/catppuccin.github.io\/jellyfin/g' {} +
+          for f in catppuccin-*-mauve.css; do
+            cp "$f" "${f%-mauve.css}.css"
+          done
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
