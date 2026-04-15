@@ -56,16 +56,16 @@
 
 > [!NOTE]
 > For the mauve accent, `-<accent>` is not needed and the import rule can just be:
-```css
-/* 🌻 Latte */
-@import url('https://jellyfin.catppuccin.com/catppuccin-latte.css');
-/* 🪴 Frappé */
-@import url('https://jellyfin.catppuccin.com/catppuccin-frappe.css');
-/* 🌺 Macchiato */
-@import url('https://jellyfin.catppuccin.com/catppuccin-macchiato.css');
-/* 🌿 Mocha */
-@import url('https://jellyfin.catppuccin.com/catppuccin-mocha.css');
-```
+> ```css
+> /* 🌻 Latte */
+> @import url('https://jellyfin.catppuccin.com/catppuccin-latte.css');
+> /* 🪴 Frappé */
+> @import url('https://jellyfin.catppuccin.com/catppuccin-frappe.css');
+> /* 🌺 Macchiato */
+> @import url('https://jellyfin.catppuccin.com/catppuccin-macchiato.css');
+> /* 🌿 Mocha */
+> @import url('https://jellyfin.catppuccin.com/catppuccin-mocha.css');
+> ```
 
 ## Creating your own theme
 
