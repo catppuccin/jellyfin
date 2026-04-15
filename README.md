@@ -44,26 +44,23 @@
 3. Copy your preferred flavor's import rule and paste it **after** the theme import:
     ```css
     /* 🌻 Latte */
-    @import url('https://jellyfin.catppuccin.com/catppuccin-latte.css');
+    @import url('https://jellyfin.catppuccin.com/catppuccin-latte-<accent>.css');
     /* 🪴 Frappé */
-    @import url('https://jellyfin.catppuccin.com/catppuccin-frappe.css');
+    @import url('https://jellyfin.catppuccin.com/catppuccin-frappe-<accent>.css');
     /* 🌺 Macchiato */
-    @import url('https://jellyfin.catppuccin.com/catppuccin-macchiato.css');
+    @import url('https://jellyfin.catppuccin.com/catppuccin-macchiato-<accent>.css');
     /* 🌿 Mocha */
-    @import url('https://jellyfin.catppuccin.com/catppuccin-mocha.css');
+    @import url('https://jellyfin.catppuccin.com/catppuccin-mocha-<accent>.css');
     ```
 4. Press save and you're done!
 
-## Customization
+> [!NOTE]
+> For the mauve accent, `-<accent>` is not needed and the import rule can just be something like:
+    ```css
+    @import url('https://jellyfin.catppuccin.com/catppuccin-mocha.css');
+    ```
 
-The accent color can be overridden by adding the following **after** the imports:
-```css
-:root {
-    --main-color: var(--sapphire);
-}
-```
-
-### Creating your own theme
+## Creating your own theme
 
 All colors can be easily changed by overriding [these CSS variables](./themes/catppuccin-mocha.css#L24-L38).
 
