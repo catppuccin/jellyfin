@@ -65,7 +65,7 @@
     @import url('https://jellyfin.catppuccin.com/catppuccin-macchiato.css');
     /* 🌿 Mocha */
     @import url('https://jellyfin.catppuccin.com/catppuccin-mocha.css');
-    ```
+>    ```
 
 ## Creating your own theme
 
