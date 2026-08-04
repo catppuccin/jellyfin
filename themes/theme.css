@@ -43,7 +43,8 @@
 }
 
 .iconOsdProgressInner,
-.mdl-slider-background-lower {
+.mdl-slider-background-lower,
+.sliderMarker.watched {
   background-color: var(--main-color);
 }
 .mdl-slider::-moz-range-thumb {
