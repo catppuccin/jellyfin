@@ -52,7 +52,8 @@
     /* 🌿 Mocha */
     @import url('https://jellyfin.catppuccin.com/catppuccin-mocha.css');
     ```
-4. Press save and you're done!
+4. For Jellyfin v12.0 and above, select the "TV" or one of the "Legacy" display modes
+5. Press save and you're done!
 
 ## Customization
 
