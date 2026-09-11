@@ -174,11 +174,6 @@ html {
   background-color: var(--main-background-transparent);
 }
 
-.devicesList .cardContent.defaultCardBackground,
-.cardContent.defaultCardBackground:has(.sessionNowPlayingContent) {
-  background-color: var(--dark-background) !important;
-}
-
 .playlistSectionButton,
 .noBackdropTransparency .detailPagePrimaryContainer {
   background: var(--second-background);
