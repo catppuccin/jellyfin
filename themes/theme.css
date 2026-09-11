@@ -9,6 +9,7 @@
   scrollbar-color: var(--hover-background) var(--second-background);
 }
 
+.MuiButton-textPrimary,
 .inputLabelFocused,
 .selectLabelFocused,
 .textareaLabelFocused,
@@ -174,6 +175,11 @@ html {
   background-color: var(--main-background-transparent);
 }
 
+.MuiPaper-elevation1 {
+  background-color: var(--second-background);
+  background-image: none;
+}
+
 .playlistSectionButton,
 .noBackdropTransparency .detailPagePrimaryContainer {
   background: var(--second-background);
@@ -236,6 +242,11 @@ div[data-role="controlgroup"] .emby-button,
   border-color: var(--hover-background) !important;
 }
 
+.MuiButton-root:hover {
+  background-color: var(--hover-background-transparent);
+}
+
+.MuiPaper-root,
 .sectionTitle,
 .cardText,
 .pageTitle,
@@ -321,4 +332,8 @@ legend {
 
 .starIcon {
   color: var(--yellow-color);
+}
+
+.MuiPaper-root {
+  box-shadow: none;
 }
