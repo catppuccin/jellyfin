@@ -31,8 +31,9 @@ whiskers:
 
   --main-color: var(--mauve);
   --main-background: {{ base.hex }};
-  --main-background-transparent: {{ base | mod(opacity=0.867) | hex }};
+  --main-background-transparent: {{ base | mod(opacity=0.8) | hex }};
   --hover-background: {{ surface0.hex }};
+  --hover-background-transparent: {{ surface0 | mod(opacity=0.7) | hex }};
   --second-background: {{ mantle.hex }};
   --main-text: {{ text.hex }};
   --white-text: {{ if(cond=flavor.light, t=base.hex, f=text.hex) }};
