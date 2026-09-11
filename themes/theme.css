@@ -90,7 +90,7 @@
 .navMenuOption:hover,
 .navMenuOption:focus {
   color: var(--main-color) !important;
-  background-color: var(--hover-background) !important;
+  background-color: var(--hover-background-transparent) !important;
 }
 
 .selectionCommandsPanel > button > .material-icons,
