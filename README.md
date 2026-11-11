@@ -40,7 +40,7 @@
     ```css
     @import url('https://jellyfin.catppuccin.com/theme.css');
     ```
-2. Paste the CSS into Dashboard > Branding > "Custom CSS code" for all users, or Settings > Display > "Custom CSS code" for this client
+2. Open settings, navigate to Display and paste the CSS into the section called "Custom CSS code"
 3. Copy your preferred flavor's import rule and paste it **after** the theme import:
     ```css
     /* 🌻 Latte */
@@ -52,21 +52,8 @@
     /* 🌿 Mocha */
     @import url('https://jellyfin.catppuccin.com/catppuccin-mocha.css');
     ```
-4. On Jellyfin 12.3, keep the "Auto" display mode for the default web layout
+4. For Jellyfin v12.0 and above, select the "TV" or one of the "Legacy" display modes
 5. Press save and you're done!
-
-### Jellyfin 12.3
-
-The default layout supports all four flavors on home, details, the video player and user settings.
-This builds on the navigation styles in [#62](https://github.com/catppuccin/jellyfin/pull/62).
-The palette also maps Jellyfin's `--jf-palette-*` variables to the selected flavor.
-Translucent controls use relative RGB colors, so use a browser that supports them.
-
-Jellyfin 12.3 does not load Branding Custom CSS on the server dashboard. Its
-[dashboard layout](https://github.com/jellyfin/jellyfin-web/blob/v12.3/src/apps/dashboard/AppLayout.tsx)
-does not render the CustomCss component. To theme the dashboard too, the web client must
-render `<CustomCss />` after `<ThemeCss dashboard />`, as the modern layout already does.
-The theme's dashboard palette mappings take effect once the client loads the stylesheet.
 
 ## Customization
 

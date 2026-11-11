@@ -6,7 +6,6 @@
  */
 
 :root {
-  color-scheme: dark;
   --rosewater: #f4dbd6;
   --flamingo: #f0c6c6;
   --pink: #f5bde6;
@@ -30,7 +29,7 @@
   --second-background: #1e2030;
   --main-text: #cad3f5;
   --white-text: #cad3f5;
-  --dimmer-text: #a5adcb;
+  --dimmer-text: #939ab7;
 
   --red-color: var(--red);
   --green-color: var(--green);

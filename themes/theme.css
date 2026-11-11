@@ -5,25 +5,27 @@
  * https://github.com/catppuccin/jellyfin/blob/main/LICENSE
  */
 
-/* Jellyfin 12 uses this palette for both MUI and legacy components.
- * Match the theme attribute so later client theme changes cannot replace it.
- * Relative RGB channels keep translucent states in sync with accent overrides.
- */
 :root,
 :root[data-theme] {
   --jf-palette-background-default: var(--main-background);
   --jf-palette-background-paper: var(--second-background);
+  --jf-palette-background-paperChannel: from var(--second-background) r g b;
   --jf-palette-background-defaultImage: none;
   --jf-palette-text-primary: var(--main-text);
+  --jf-palette-text-primaryChannel: from var(--main-text) r g b;
   --jf-palette-text-secondary: var(--dimmer-text);
   --jf-palette-text-disabled: var(--dimmer-text);
   --jf-palette-action-active: var(--main-text);
+  --jf-palette-action-activeChannel: from var(--main-text) r g b;
   --jf-palette-action-hover: var(--hover-background-transparent);
   --jf-palette-action-selected: var(--hover-background-transparent);
+  --jf-palette-action-selectedChannel: from var(--hover-background) r g b;
   --jf-palette-action-focus: var(--hover-background-transparent);
   --jf-palette-action-disabled: var(--dimmer-text);
   --jf-palette-action-disabledBackground: var(--hover-background);
   --jf-palette-divider: var(--hover-background);
+  --jf-palette-common-onBackground: var(--main-text);
+  --jf-palette-common-onBackgroundChannel: from var(--main-text) r g b;
   --jf-palette-AppBar-defaultBg: var(--second-background);
   --jf-palette-AppBar-darkBg: var(--second-background);
   --jf-palette-AppBar-darkColor: var(--main-text);
@@ -41,108 +43,50 @@
   --jf-palette-Avatar-defaultBg: var(--hover-background);
   --jf-palette-Chip-defaultBorder: var(--hover-background);
   --jf-palette-Chip-defaultIconColor: var(--main-text);
-  --jf-palette-Chip-defaultAvatarColor: var(--main-text);
   --jf-palette-TableCell-border: var(--hover-background);
   --jf-palette-Switch-defaultColor: var(--main-text);
   --jf-palette-Switch-defaultDisabledColor: var(--dimmer-text);
-  --jf-palette-common-background: var(--main-background);
-  --jf-palette-common-onBackground: var(--main-text);
+  --jf-palette-Switch-primaryDisabledColor: var(--dimmer-text);
   --jf-palette-starIcon-main: var(--yellow-color);
   --jf-palette-primary-main: var(--main-color);
   --jf-palette-primary-light: var(--main-color);
   --jf-palette-primary-dark: var(--main-color);
   --jf-palette-primary-contrastText: var(--main-background);
   --jf-palette-primary-mainChannel: from var(--main-color) r g b;
-  --jf-palette-primary-lightChannel: var(--jf-palette-primary-mainChannel);
-  --jf-palette-primary-darkChannel: var(--jf-palette-primary-mainChannel);
-  --jf-palette-primary-contrastTextChannel: from var(--main-background) r g b;
-  --jf-palette-Switch-primaryDisabledColor: var(--dimmer-text);
   --jf-palette-LinearProgress-primaryBg: var(--hover-background);
-  --jf-palette-Slider-primaryTrack: var(--hover-background);
   --jf-palette-secondary-main: var(--main-color);
-  --jf-palette-secondary-light: var(--main-color);
-  --jf-palette-secondary-dark: var(--main-color);
   --jf-palette-secondary-contrastText: var(--main-background);
-  --jf-palette-secondary-mainChannel: from var(--main-color) r g b;
-  --jf-palette-secondary-lightChannel: var(--jf-palette-secondary-mainChannel);
-  --jf-palette-secondary-darkChannel: var(--jf-palette-secondary-mainChannel);
-  --jf-palette-secondary-contrastTextChannel: from var(--main-background) r g b;
-  --jf-palette-Switch-secondaryDisabledColor: var(--dimmer-text);
-  --jf-palette-LinearProgress-secondaryBg: var(--hover-background);
-  --jf-palette-Slider-secondaryTrack: var(--hover-background);
   --jf-palette-error-main: var(--red-color);
   --jf-palette-error-light: var(--red-color);
   --jf-palette-error-dark: var(--red-color);
   --jf-palette-error-contrastText: var(--main-background);
   --jf-palette-error-mainChannel: from var(--red-color) r g b;
-  --jf-palette-error-lightChannel: var(--jf-palette-error-mainChannel);
-  --jf-palette-error-darkChannel: var(--jf-palette-error-mainChannel);
-  --jf-palette-error-contrastTextChannel: from var(--main-background) r g b;
-  --jf-palette-Switch-errorDisabledColor: var(--dimmer-text);
   --jf-palette-LinearProgress-errorBg: var(--hover-background);
-  --jf-palette-Slider-errorTrack: var(--hover-background);
   --jf-palette-Alert-errorColor: var(--red-color);
   --jf-palette-Alert-errorIconColor: var(--red-color);
   --jf-palette-Alert-errorStandardBg: var(--second-background);
-  --jf-palette-Alert-errorFilledBg: var(--red-color);
-  --jf-palette-Alert-errorFilledColor: var(--main-background);
   --jf-palette-warning-main: var(--yellow-color);
-  --jf-palette-warning-light: var(--yellow-color);
-  --jf-palette-warning-dark: var(--yellow-color);
   --jf-palette-warning-contrastText: var(--main-background);
   --jf-palette-warning-mainChannel: from var(--yellow-color) r g b;
-  --jf-palette-warning-lightChannel: var(--jf-palette-warning-mainChannel);
-  --jf-palette-warning-darkChannel: var(--jf-palette-warning-mainChannel);
-  --jf-palette-warning-contrastTextChannel: from var(--main-background) r g b;
-  --jf-palette-Switch-warningDisabledColor: var(--dimmer-text);
   --jf-palette-LinearProgress-warningBg: var(--hover-background);
-  --jf-palette-Slider-warningTrack: var(--hover-background);
   --jf-palette-Alert-warningColor: var(--yellow-color);
   --jf-palette-Alert-warningIconColor: var(--yellow-color);
   --jf-palette-Alert-warningStandardBg: var(--second-background);
-  --jf-palette-Alert-warningFilledBg: var(--yellow-color);
-  --jf-palette-Alert-warningFilledColor: var(--main-background);
   --jf-palette-info-main: var(--blue-color);
-  --jf-palette-info-light: var(--blue-color);
-  --jf-palette-info-dark: var(--blue-color);
   --jf-palette-info-contrastText: var(--main-background);
   --jf-palette-info-mainChannel: from var(--blue-color) r g b;
-  --jf-palette-info-lightChannel: var(--jf-palette-info-mainChannel);
-  --jf-palette-info-darkChannel: var(--jf-palette-info-mainChannel);
-  --jf-palette-info-contrastTextChannel: from var(--main-background) r g b;
-  --jf-palette-Switch-infoDisabledColor: var(--dimmer-text);
-  --jf-palette-LinearProgress-infoBg: var(--hover-background);
-  --jf-palette-Slider-infoTrack: var(--hover-background);
   --jf-palette-Alert-infoColor: var(--blue-color);
   --jf-palette-Alert-infoIconColor: var(--blue-color);
   --jf-palette-Alert-infoStandardBg: var(--second-background);
   --jf-palette-Alert-infoFilledBg: var(--blue-color);
   --jf-palette-Alert-infoFilledColor: var(--main-background);
   --jf-palette-success-main: var(--green-color);
-  --jf-palette-success-light: var(--green-color);
-  --jf-palette-success-dark: var(--green-color);
   --jf-palette-success-contrastText: var(--main-background);
   --jf-palette-success-mainChannel: from var(--green-color) r g b;
-  --jf-palette-success-lightChannel: var(--jf-palette-success-mainChannel);
-  --jf-palette-success-darkChannel: var(--jf-palette-success-mainChannel);
-  --jf-palette-success-contrastTextChannel: from var(--main-background) r g b;
-  --jf-palette-Switch-successDisabledColor: var(--dimmer-text);
   --jf-palette-LinearProgress-successBg: var(--hover-background);
-  --jf-palette-Slider-successTrack: var(--hover-background);
   --jf-palette-Alert-successColor: var(--green-color);
   --jf-palette-Alert-successIconColor: var(--green-color);
   --jf-palette-Alert-successStandardBg: var(--second-background);
-  --jf-palette-Alert-successFilledBg: var(--green-color);
-  --jf-palette-Alert-successFilledColor: var(--main-background);
-  --jf-palette-background-defaultChannel: from var(--main-background) r g b;
-  --jf-palette-background-paperChannel: from var(--second-background) r g b;
-  --jf-palette-text-primaryChannel: from var(--main-text) r g b;
-  --jf-palette-text-secondaryChannel: from var(--dimmer-text) r g b;
-  --jf-palette-action-activeChannel: from var(--main-text) r g b;
-  --jf-palette-action-selectedChannel: from var(--hover-background) r g b;
-  --jf-palette-dividerChannel: from var(--hover-background) r g b;
-  --jf-palette-common-backgroundChannel: from var(--main-background) r g b;
-  --jf-palette-common-onBackgroundChannel: from var(--main-text) r g b;
 }
 
 * {

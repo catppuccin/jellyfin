@@ -14,7 +14,6 @@ whiskers:
  */
 
 :root {
-  color-scheme: {{ if(cond=flavor.light, t="light", f="dark") }};
   --rosewater: {{ rosewater.hex }};
   --flamingo: {{ flamingo.hex }};
   --pink: {{ pink.hex }};
@@ -38,7 +37,7 @@ whiskers:
   --second-background: {{ mantle.hex }};
   --main-text: {{ text.hex }};
   --white-text: {{ if(cond=flavor.light, t=base.hex, f=text.hex) }};
-  --dimmer-text: {{ subtext0.hex }};
+  --dimmer-text: {{ overlay2.hex }};
 
   --red-color: var(--red);
   --green-color: var(--green);
