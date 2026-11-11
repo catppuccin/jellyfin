@@ -284,6 +284,10 @@ html {
   border-color: var(--second-background);
 }
 
+.MuiPaper-elevation2,
+.MuiPaper-elevation2 > .MuiBox-root,
+.MuiTableRow-root,
+.MuiTableCell-root,
 .iconOsd,
 .logoScreenSaver,
 .programCell-active,
@@ -326,6 +330,7 @@ div[data-role="controlgroup"] .emby-button,
   background-color: var(--hover-background);
 }
 
+.navMenuOption-selected,
 .itemProgressBar.backgroundProgress .itemProgressBarForeground {
   background-color: var(--hover-background) !important;
 }
@@ -373,6 +378,7 @@ legend {
   color: var(--main-text);
 }
 
+.MuiTableSortLabel-root .MuiTableSortLabel-icon,
 .mediaInfoOfficialRating,
 .guideProgramNameCaretIcon,
 .mediaInfoItem,
