@@ -5,10 +5,95 @@
  * https://github.com/catppuccin/jellyfin/blob/main/LICENSE
  */
 
+:root,
+:root[data-theme] {
+  --jf-palette-background-default: var(--main-background);
+  --jf-palette-background-paper: var(--second-background);
+  --jf-palette-background-paperChannel: from var(--second-background) r g b;
+  --jf-palette-background-defaultImage: none;
+  --jf-palette-text-primary: var(--main-text);
+  --jf-palette-text-primaryChannel: from var(--main-text) r g b;
+  --jf-palette-text-secondary: var(--dimmer-text);
+  --jf-palette-text-disabled: var(--dimmer-text);
+  --jf-palette-action-active: var(--main-text);
+  --jf-palette-action-activeChannel: from var(--main-text) r g b;
+  --jf-palette-action-hover: var(--hover-background-transparent);
+  --jf-palette-action-selected: var(--hover-background-transparent);
+  --jf-palette-action-selectedChannel: from var(--hover-background) r g b;
+  --jf-palette-action-focus: var(--hover-background-transparent);
+  --jf-palette-action-disabled: var(--dimmer-text);
+  --jf-palette-action-disabledBackground: var(--hover-background);
+  --jf-palette-divider: var(--hover-background);
+  --jf-palette-common-onBackground: var(--main-text);
+  --jf-palette-common-onBackgroundChannel: from var(--main-text) r g b;
+  --jf-palette-AppBar-defaultBg: var(--second-background);
+  --jf-palette-AppBar-darkBg: var(--second-background);
+  --jf-palette-AppBar-darkColor: var(--main-text);
+  --jf-palette-AppBar-transparentBg: var(--main-background-transparent);
+  --jf-palette-AppBar-gradient: none;
+  --jf-palette-FilledInput-bg: var(--second-background);
+  --jf-palette-FilledInput-hoverBg: var(--hover-background);
+  --jf-palette-FilledInput-disabledBg: var(--hover-background);
+  --jf-palette-FilledInput-borderColor: var(--hover-background);
+  --jf-palette-Button-inheritContainedBg: var(--second-background);
+  --jf-palette-Button-inheritContainedHoverBg: var(--hover-background);
+  --jf-palette-SnackbarContent-bg: var(--second-background);
+  --jf-palette-SnackbarContent-color: var(--main-text);
+  --jf-palette-Tooltip-bg: var(--second-background);
+  --jf-palette-Avatar-defaultBg: var(--hover-background);
+  --jf-palette-Chip-defaultBorder: var(--hover-background);
+  --jf-palette-Chip-defaultIconColor: var(--main-text);
+  --jf-palette-TableCell-border: var(--hover-background);
+  --jf-palette-Switch-defaultColor: var(--main-text);
+  --jf-palette-Switch-defaultDisabledColor: var(--dimmer-text);
+  --jf-palette-Switch-primaryDisabledColor: var(--dimmer-text);
+  --jf-palette-starIcon-main: var(--yellow-color);
+  --jf-palette-primary-main: var(--main-color);
+  --jf-palette-primary-light: var(--main-color);
+  --jf-palette-primary-dark: var(--main-color);
+  --jf-palette-primary-contrastText: var(--main-background);
+  --jf-palette-primary-mainChannel: from var(--main-color) r g b;
+  --jf-palette-LinearProgress-primaryBg: var(--hover-background);
+  --jf-palette-secondary-main: var(--main-color);
+  --jf-palette-secondary-contrastText: var(--main-background);
+  --jf-palette-error-main: var(--red-color);
+  --jf-palette-error-light: var(--red-color);
+  --jf-palette-error-dark: var(--red-color);
+  --jf-palette-error-contrastText: var(--main-background);
+  --jf-palette-error-mainChannel: from var(--red-color) r g b;
+  --jf-palette-LinearProgress-errorBg: var(--hover-background);
+  --jf-palette-Alert-errorColor: var(--red-color);
+  --jf-palette-Alert-errorIconColor: var(--red-color);
+  --jf-palette-Alert-errorStandardBg: var(--second-background);
+  --jf-palette-warning-main: var(--yellow-color);
+  --jf-palette-warning-contrastText: var(--main-background);
+  --jf-palette-warning-mainChannel: from var(--yellow-color) r g b;
+  --jf-palette-LinearProgress-warningBg: var(--hover-background);
+  --jf-palette-Alert-warningColor: var(--yellow-color);
+  --jf-palette-Alert-warningIconColor: var(--yellow-color);
+  --jf-palette-Alert-warningStandardBg: var(--second-background);
+  --jf-palette-info-main: var(--blue-color);
+  --jf-palette-info-contrastText: var(--main-background);
+  --jf-palette-info-mainChannel: from var(--blue-color) r g b;
+  --jf-palette-Alert-infoColor: var(--blue-color);
+  --jf-palette-Alert-infoIconColor: var(--blue-color);
+  --jf-palette-Alert-infoStandardBg: var(--second-background);
+  --jf-palette-Alert-infoFilledBg: var(--blue-color);
+  --jf-palette-Alert-infoFilledColor: var(--main-background);
+  --jf-palette-success-main: var(--green-color);
+  --jf-palette-success-contrastText: var(--main-background);
+  --jf-palette-success-mainChannel: from var(--green-color) r g b;
+  --jf-palette-LinearProgress-successBg: var(--hover-background);
+  --jf-palette-Alert-successColor: var(--green-color);
+  --jf-palette-Alert-successIconColor: var(--green-color);
+  --jf-palette-Alert-successStandardBg: var(--second-background);
+}
+
 * {
   scrollbar-color: var(--hover-background) var(--second-background);
 }
 
+.MuiButton-textPrimary,
 .inputLabelFocused,
 .selectLabelFocused,
 .textareaLabelFocused,
@@ -174,6 +259,19 @@ html {
   background-color: var(--main-background-transparent);
 }
 
+.MuiPaper-elevation1 {
+  background-color: var(--second-background);
+  background-image: none;
+}
+
+.MuiCardMedia-root.defaultCardBackground {
+  background-color: var(--second-background) !important;
+}
+
+.MuiCardMedia-root[style*="background-image"] {
+  color: var(--white-text);
+}
+
 .playlistSectionButton,
 .noBackdropTransparency .detailPagePrimaryContainer {
   background: var(--second-background);
@@ -186,6 +284,10 @@ html {
   border-color: var(--second-background);
 }
 
+.MuiPaper-elevation2,
+.MuiPaper-elevation2 > .MuiBox-root,
+.MuiTableRow-root,
+.MuiTableCell-root,
 .iconOsd,
 .logoScreenSaver,
 .programCell-active,
@@ -228,6 +330,7 @@ div[data-role="controlgroup"] .emby-button,
   background-color: var(--hover-background);
 }
 
+.navMenuOption-selected,
 .itemProgressBar.backgroundProgress .itemProgressBarForeground {
   background-color: var(--hover-background) !important;
 }
@@ -236,6 +339,12 @@ div[data-role="controlgroup"] .emby-button,
   border-color: var(--hover-background) !important;
 }
 
+.MuiButton-text:hover,
+.MuiButton-outlined:hover {
+  background-color: var(--hover-background-transparent);
+}
+
+.MuiPaper-root,
 .sectionTitle,
 .cardText,
 .pageTitle,
@@ -269,6 +378,7 @@ legend {
   color: var(--main-text);
 }
 
+.MuiTableSortLabel-root .MuiTableSortLabel-icon,
 .mediaInfoOfficialRating,
 .guideProgramNameCaretIcon,
 .mediaInfoItem,
@@ -321,4 +431,9 @@ legend {
 
 .starIcon {
   color: var(--yellow-color);
+}
+
+.MuiPaper-root {
+  background-image: none;
+  box-shadow: none;
 }
